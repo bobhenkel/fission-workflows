@@ -33,7 +33,7 @@ install:
 - test/e2e/travis-kube-setup.sh
 # Needed for some integration tests
 - glide -h > /dev/null || go get github.com/Masterminds/glide
-- nats-streaming-server -h > /dev/null || go get github.com/nats-io/nats-streaming-server
+#- nats-streaming-server -h > /dev/null || go get github.com/nats-io/nats-streaming-server
 
 before_script:
 - cd ${TRAVIS_BUILD_DIR}
